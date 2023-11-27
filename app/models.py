@@ -2,7 +2,7 @@ from pickle import FALSE
 from sqlalchemy.sql.expression import text
 from sqlalchemy.sql.sqltypes import TIMESTAMP
 from sqlalchemy import Column, Integer, String, Float, JSON, ARRAY
-from database import Base
+from .database import Base
 
 # Declaration of tables
 class MonthylyBudget(Base): 

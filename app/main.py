@@ -6,11 +6,10 @@
 
 # from fastapi import FastAPI
 from fastapi import FastAPI
-import models
-
-from objects.balance import Balance
-from schemas import ValueQuery
-from database import engine
+from . import models
+from .objects.balance import Balance
+from .schemas import ValueQuery
+from .database import engine
 
 
 models.Base.metadata.create_all(bind=engine)
